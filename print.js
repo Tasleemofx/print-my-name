@@ -1,4 +1,8 @@
 const Name = "Oladepo Tesleem Tayo";
-console.log(Name);
-let printHere = document.querySelector("#Printhere");
-printHere.textContent= Name;
+const btn = document.querySelector('button');
+const showName = () => {
+    console.log(Name);
+    let printHere = document.querySelector("#Printhere");
+    printHere.textContent = Name;
+}
+btn.addEventListener('click', showName)
